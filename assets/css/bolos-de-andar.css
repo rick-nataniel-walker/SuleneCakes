@@ -1,0 +1,16 @@
+#section-1 {
+  background: url("../../assets/img/profile-4.webp") center / cover no-repeat;
+}
+
+#section-2 {
+  padding-bottom: 0;
+}
+
+#section-1 #word-item {
+  color: var(--p-color);
+}
+
+#section-1 #word-item h1 {
+  color: var(--p-color);
+}
+

@@ -1,0 +1,24 @@
+.section-2.section-basic-style.download-page {
+  /*min-height: 100vh;*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-container {
+  position: relative;
+}
+
+.page {
+  background: #FAFCFB;
+}
+
+.download-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+

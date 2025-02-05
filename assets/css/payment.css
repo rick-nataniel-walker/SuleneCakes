@@ -1,0 +1,47 @@
+.section-1.section-basic-style.payment-section-1 {
+  /*height: 5vh;*/
+  background: url("../../assets/img/_MG_0556-1.webp");
+  filter: opacity(90%);
+  background-size: cover;
+  background-position: 50% 15%;
+}
+
+.pymnt-form-els {
+}
+
+input {
+}
+
+.pymnt-form input:focus {
+  border: 1px solid var(--p-color);
+  box-shadow: none;
+}
+
+.mpesa-payment-img {
+  width: 41%;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mpesa-payment-img:focus {
+  border: 2px solid var(--p-color-dark);
+}
+
+.mpesa-payment-img:hover {
+  width: 40%;
+  box-shadow: 1px 5px 20px var(--p-color);
+}
+
+@media (min-width: 992px) {
+  .mpesa-payment-img {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .mpesa-payment-img:hover {
+    width: 24.7%;
+  }
+}
+
