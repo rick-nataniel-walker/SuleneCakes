@@ -21,7 +21,6 @@ mpesaPay = async (route,amount) => {
     startModal("Confirme o pagamento no seu MPesa...");
     let r = await storeData(`${configs.mpesaUrl}${route}`, form, "formDatapostAjax");
     killModal();
-    console.log(r);
 }
 
 function redirectAfterPayment(){
