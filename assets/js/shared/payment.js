@@ -24,25 +24,6 @@ mpesaPay = async (route,amount) => {
     console.log(r);
 }
 
-function queryBill(bill){
-    startModal("Aguarde a confirmação","fadingCircle");
-    nonPostAjax((serverData,status)=>{
-        if(status=='error') {
-            notyf.error("Erro ao obter a resposta");
-            killModal();
-            return;
-        }
-        if(serverData.data.hasOwnProperty('bill')){
-            killModal();
-            console.log(redirectAfterPayment())
-            location.href = location.origin+"/"+redirectAfterPayment();
-        }else{
-            killModal();
-            notyf.error("Código inválido");
-        }
-    }, 'get',testRoute+"/payments/"+bill,headers)
-}
-
 function redirectAfterPayment(){
     let url=null;
     if(window.location.href==location.origin+'/pagar-guia.html') url = 'guia-download-page';
